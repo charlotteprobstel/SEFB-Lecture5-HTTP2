@@ -16,7 +16,7 @@ public class Main {
 
     private static void makeGetRequest(){
         try{
-            URL myURL = new URL("https://git.heroku.com/sefb-lecture5-http.git/");
+            URL myURL = new URL("https://sefb-lecture5-http-b68d7d1a9cb4.herokuapp.com/");
             HttpURLConnection conn = (HttpURLConnection) myURL.openConnection();
             conn.setRequestMethod("GET");
             conn.setRequestProperty("Accept", "text/html");
@@ -42,7 +42,7 @@ public class Main {
 
         URL myURL = null;
         try {
-            myURL = new URL("https://git.heroku.com/sefb-lecture5-http.git/");
+            myURL = new URL("https://sefb-lecture5-http-b68d7d1a9cb4.herokuapp.com/");
             HttpURLConnection conn = null;
             conn = (HttpURLConnection) myURL.openConnection();
             conn.setRequestMethod("POST");
